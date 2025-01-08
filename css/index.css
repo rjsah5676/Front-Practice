@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
 
-body {
-    background-color: #121212;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-use-select: none;
-    user-select: none;
-}
-
 .main-container {
     width:60%;
     margin: 0;
@@ -50,7 +42,7 @@ body {
     cursor: pointer;
 }
 
-.index-button > img {
+.index-button > a > img {
     width: 100%;
     height: calc(100% - 10vh);
     object-fit: cover;
