@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+.login-container {
+    width:60%;
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    top:8%;
+    left:20%;
+}
+
+.login-box {
+    font-family: "Do Hyeon", serif;
+    font-style: normal;
+    color:#fff9f9;
+    margin:auto;
+    width:400px;
+    height:45vh;
+    margin-top:150px;
+    margin-bottom:150px;
+    background-color: #4f4f4f;
+    border-radius: 15px;
+    opacity: 0.8;
+}
+
+.login-box > h1 {
+    font-size:45px;
+    line-height:60px;
+    padding-top:20px;
+    letter-spacing: 2px;
+}
+
+.idpw-box {
+    margin-top:0px;
+}
+
+.idpw-col {
+    margin-left:10px;
+    display:flex;
+    height:40px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.idpw-col > h3 {
+    line-height: 0px;
+    font-size:25px;
+    width:110px;
+    letter-spacing: 2px;
+}
+
+.idpw-col > input {
+    width: 200px;
+    background-color: #c4bfbf;
+    color:#252525;
+    border:0px;
+    border-radius:7px;
+    padding-left:10px;
+    transition: all 0.4s;
+}
+
+.idpw-col > input:focus {
+    background-color: #868686;
+    color:white;
+}
+
+#login-button {
+    font-family: "Do Hyeon", serif;
+    font-style: normal;
+    margin-top:30px;
+    background-color: #fff9f9;
+    color:#555555;
+    border:0px;
+    width:300px;
+    height:40px;
+    line-height: 40px;
+    border-radius: 20px;
+    transition: all 0.6s;
+    font-size:20px;
+}
+
+#login-button:hover {
+    cursor: pointer;
+    color:white;
+    background-color: #aaaaaa;
+}
+
+.signup-find-box {
+    margin-top:40px;
+}
+
+#login-signup-button {
+    font-size:17px;
+    margin-left:80px;
+    text-decoration: none;
+    color:#e0e0e0;
+    float:left;
+    transition: all 0.6s;
+}
+
+#login-signup-button:hover {
+    color:#9b9b9b;
+}
+
+#login-find-button {
+    font-size: 17px;
+    margin-right:60px;
+    text-decoration: none;
+    color:#e0e0e0;
+    float:right;
+    transition: all 0.6s;
+}
+
+#login-find-button:hover {
+    color:#9b9b9b;
+}

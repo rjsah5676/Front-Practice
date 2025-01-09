@@ -1,0 +1,9 @@
+body {
+    opacity: 1;
+    transition-duration: 1750ms;
+    transition-property: opacity;
+}
+
+body.fade {
+    opacity: 0;
+}

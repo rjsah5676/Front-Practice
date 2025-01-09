@@ -5,11 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/fade.css" />
     <script src="./js/style.js"></script>
 </head>
-<body>
+<body class="fade">
     <div class="login-container">
-
+        <form class="login-box">
+            <h1>Login</h1>
+            <div class="idpw-box">
+                <div class="idpw-col"><h3>ID</h3><input type="text"/></div>
+                <div class="idpw-col"><h3>PW</h3><input type="password"/></div>
+            </div>
+            <input id="login-button" type="submit" value="로그인"/>
+            <div class="signup-find-box">
+                <a href="#" id="login-signup-button">회원가입</a>
+                <a href="#" id="login-find-button">아이디/비밀번호 찾기</a>
+            </div>
+        </form>
         <div class="footer"></div>
     </div>
     <script>

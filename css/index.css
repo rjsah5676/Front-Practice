@@ -20,9 +20,14 @@
     font-size:70px;
 }
 
+#gp {
+    font-size:50px;
+}
+
 .main-container-button {
     display: flex;
     justify-content: center;
+    opacity: 0.8;
 }
 
 .main-container-button > div {
@@ -66,4 +71,28 @@
 	transform: scale(1.07);
 	-webkit-transition: .5s ease-in-out;
 	transition: .5s ease-in-out;
+}
+
+@media (max-width:1024px){
+    .main-container-button > div {
+        height: 38vh;
+        margin:20px;
+        margin-top:50px;
+        margin-bottom:100px;
+    }
+    .index-button > span {
+        font-size:20px;
+    }  
+    .index-button > a > img {
+        width: 100%;
+        height: calc(100% - 8vh);
+        object-fit: cover;
+        transition: 0.5s;
+    }
+    #wc {
+        font-size:50px;
+    }
+    #gp {
+        font-size:35px;
+    }
 }
