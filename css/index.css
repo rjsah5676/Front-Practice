@@ -54,12 +54,15 @@
     transition: 0.5s;
 }
 
-.index-button > span {
+a{
+    color:#2a2a2a;
+    text-decoration: none;
+}
+.index-button > a > span {
     display: block;
     text-align: center;
-    height: 3vh;
-    line-height: 2.0;
-    margin-top:15px;
+    height: 10vh;
+    line-height: 300%;
     font-family: "Do Hyeon", serif;
     font-weight: 400;
     font-style: normal;
@@ -80,7 +83,7 @@
         margin-top:50px;
         margin-bottom:100px;
     }
-    .index-button > span {
+    .index-button > a > span {
         font-size:20px;
     }  
     .index-button > a > img {
