@@ -31,3 +31,12 @@ function getStyles() {
         });
       });
 }
+
+function hoverHome(){
+    let hb=document.getElementById("gohome");
+    hb.style.background = "url(./img/home_hover.jpg)";
+}
+function unhoverHome(){
+    let hb=document.getElementById("gohome");
+    hb.style.background = "url(./img/home.jpg)";
+}

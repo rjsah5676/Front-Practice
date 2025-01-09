@@ -21,6 +21,7 @@ h1 {
     background-color: rgb(39, 38, 38);
     border-radius: 20px;
     padding:20px;
+    margin-bottom:40px;
 }
 .signup-box > ul {
     display: flex;
@@ -35,7 +36,7 @@ h1 {
     display:flex;
     width:100%;
     margin:auto;
-    margin-bottom:20px;
+    margin-top:20px;
 }
 
 .signup-box > ul > li > h3{
@@ -46,15 +47,75 @@ h1 {
 
 .signup-box > ul > li > input{
     margin-right:auto;
-    width:200px;
-    height:3vh;
+    width:190px;
+    height:25px;
+    background-color: rgb(218, 218, 218);
+    color: rgb(44,44,44);
+    border-radius: 6px;
+    border:1px solid gray;
+    padding-left: 10px;
+    transition: all 0.4s;
 }
 
-@media (max-width:640px) {
+.signup-box > ul > li > input:focus{
+    background-color: rgb(109, 109, 109);
+    color: rgb(218, 218, 218);
+}
+
+.signup-box>ul>li>.info-input {
+    margin-right:auto;
+}
+
+.info-input>input {
+    width:190px;
+    height:25px;
+    background-color: rgb(218, 218, 218);
+    color: rgb(44,44,44);
+    border-radius: 6px;
+    border:1px solid gray;
+    padding-left: 10px;
+    transition: all 0.4s;
+}
+.info-input>input:focus{
+    background-color: rgb(109, 109, 109);
+    color: rgb(218, 218, 218);
+}
+
+@media (max-width:760px) {
     .signup-box > ul > li > h3{
         font-size:14px;
     }
     .signup-box > ul > li > input{
         width:140px;
     }
+    .signup-box>ul>li>.info-input>input {
+        width:140px;
+    }
+}
+
+.signup-info-msg {
+    margin-top:3px;
+    color:rgb(126, 126, 126);
+    font-size:14px;
+}
+
+.signup-button {
+    margin-top:20px;
+    margin-bottom:30px;
+    font-family: "Gothic A1", serif;
+    font-style: normal;
+    border: 0px;
+    border-radius: 10px;
+    width:200px;
+    height:50px;
+    color:rgb(87, 87, 87);
+    background-color: rgb(218, 218, 218);
+    font-size:25px;
+    transition: all 0.6s;
+}
+
+.signup-button:hover {
+    color:rgb(218, 218, 218);
+    background-color: rgb(87, 87, 87);
+    cursor:pointer;
 }
