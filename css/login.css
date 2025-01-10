@@ -114,3 +114,23 @@
 #login-find-button:hover {
     color:#9b9b9b;
 }
+
+.idpw-x{
+    color:rgb(231, 109, 109);
+    font-family:none;
+    font-size:11px;
+    line-height: 0;
+    margin-left:120px;
+    padding:0;
+    text-align: left;
+    transition-duration: 800ms;
+    transition-property: opacity;
+}
+
+#id-x{
+    opacity: 0;
+}
+
+#pw-x{
+    opacity: 0;
+}
