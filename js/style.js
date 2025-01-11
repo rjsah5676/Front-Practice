@@ -15,12 +15,14 @@ function getStyles() {
     ft.style.zIndex="-1";
     ft.style.textAlign="center";
 
+    var user_name_db=getStore("myName");
+
     let hd=document.getElementsByClassName("header")[0];
     if(hd!=null)
         hd.innerHTML = `
                 <li id="logo"><a href="./mainPage.html">GM LEE</a></li>
-                <li id="nav"><div><a href="./guest.html">Guest</a></div><div><a href="./gallery.html">Gallery</a></div><div><a href="./project.html">Project</a></div><div><a href="./about.html">About</a></div></li>
-                <li id="contact-logout"><div id="logout" onclick="logout()">Logout</div><div id="contact" onclick="openContact(1)">Contact</div></li>
+                <li id="nav"><div><a href="./guest.html">Guest</a></div><div><a href="./diary.html">Diary</a></div><div><a href="./gallery.html">Gallery</a></div><div><a href="./project.html">Project</a></div></li>
+                <li id="contact-logout"><div id="logout" onclick="logout()">Logout</div><div id="contact" onclick="openContact(1)">Contact</div><h6>Welcome. `+user_name_db+`</h6></li>
             `;
 
     let cc=document.getElementById("contact-container");

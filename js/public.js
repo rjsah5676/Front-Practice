@@ -6,7 +6,9 @@ if(sessionStorage.getItem("user_id_db")==null){
 
 function getStore(idpw){
     let store = sessionStorage.getItem(idpw);
-    return store.split(",");
+    if(store!=null)
+        return store.split(",");
+    return "";
 }
 
 function idChk(id){
