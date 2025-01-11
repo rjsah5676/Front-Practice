@@ -18,7 +18,12 @@ function login(){
     }
     sessionStorage.setItem("myLogin",i_id);
 
-    //sessionStorage.setItem("myName"); 여기부터 하기
-    
+    sessionStorage.setItem("myName", getStore("user_name_db")[id_chk]);
     location.href="./page/mainPage.html";
 }
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        login();
+    }
+});

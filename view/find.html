@@ -14,18 +14,13 @@
     <a href="./index.html"><div id="gohome" onmouseout="unhoverHome()" onmouseover="hoverHome()" style="background:url(../img/home.jpg);margin:20px;width:60px;height:60px;transition:all 0.4s;"></div></a>
     <div class="login-container">
         <form class="login-box">
-            <h1>Login</h1>
+            <h1>Find ID</h1>
             <div class="idpw-box">
-                <div class="idpw-col"><h3>ID</h3><input id="user_id" type="text"/></div>
-                <div class="idpw-x" id="id-x">존재하지 않는 아이디 입니다.</div>
-                <div class="idpw-col"><h3>PW</h3><input id="user_pw" type="password"/></div>
-                <div class="idpw-x" id="pw-x">비밀번호가 일치하지 않습니다.</div>
+                <div class="idpw-col" style="margin-top:80px; margin-left:50px;">
+                    <h3 style="font-weight: 200; width:80px;">이름</h3><input id="user_name" type="text"/></div>
+                <div class="idpw-x" id="id-x">존재하지 않는 이름 입니다.</div>
             </div>
-            <input id="login-button" type="button" value="로그인" onclick="login();"/>
-            <div class="signup-find-box">
-                <a href="./signup.html" id="login-signup-button">회원가입</a>
-                <a href="./find.html" id="login-find-button">아이디/비밀번호 찾기</a>
-            </div>
+            <input id="login-button" type="button" value="찾기"/>
         </form>
         <div class="footer"></div>
     </div>

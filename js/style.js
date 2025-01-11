@@ -14,22 +14,35 @@ function getStyles() {
     ft.style.fontSize="20px";
     ft.style.zIndex="-1";
     ft.style.textAlign="center";
-    const media = matchMedia("screen and (max-width: 1024px)");
 
-    media.addListener((a) => {
-        if(a.matches) {
-            ft.style.fontSize = "15px";
-        }
-        else {
-            ft.style.fontSize = "20px";
-        }
+    let hd=document.getElementsByClassName("header")[0];
+    if(hd!=null)
+        hd.innerHTML = `
+                <li id="logo"><a href="./mainPage.html">GM LEE</a></li>
+                <li id="nav"><div><a href="./about.html">About</a></div><div><a href="./project.html">Project</a></div><div><a href="./guest.html">Guest</a></div><div><a href="./gallery.html">Gallery</a></div></li>
+                <li id="contact-logout"><div id="logout" onclick="logout()">Logout</div><div id="contact">Contact</div></li>
+            `;
+
+    const media = window.matchMedia("screen and (max-width: 1024px)");
+    window.addEventListener('resize', function() {
+        handleFooter(media);
     });
 
     document.addEventListener('DOMContentLoaded', () => {
         window.setTimeout(() => {
-          document.body.classList.remove('fade');
+            document.body.classList.remove('fade');
         });
-      });
+    });
+}
+
+function handleFooter(a){
+    let ft=document.getElementsByClassName("footer")[0];
+    if(a.matches) {
+        ft.style.fontSize = "15px";
+    }
+    else {
+        ft.style.fontSize = "20px";
+    }
 }
 
 function hoverHome(){

@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 .main-container {
     width:60%;
     margin: 0;
@@ -14,26 +13,27 @@
     padding: 0px;
     margin:0px;
     color:white;
-    font-family: "Jersey 15", serif;
-    font-weight: 400;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
     font-style: normal;
     font-size:70px;
+    text-shadow: 4px 4px 4px #8a8888;
 }
 
 #gp {
-    font-size:50px;
+    font-size:46px;
 }
 
 .main-container-button {
     display: flex;
     justify-content: center;
-    opacity: 0.8;
 }
 
 .main-container-button > div {
     height: 58vh;
     margin:40px;
     background-color: white;
+    box-shadow: 0px 0px 25px #8a8888;
 }
 
 .index-button {
@@ -45,6 +45,7 @@
     line-height: 0;
     border-radius: 10px;
     cursor: pointer;
+    opacity: 0.66;
 }
 
 .index-button > a > img {
@@ -74,6 +75,7 @@ a{
 	transform: scale(1.07);
 	-webkit-transition: .5s ease-in-out;
 	transition: .5s ease-in-out;
+    opacity:0.9;
 }
 
 @media (max-width:1024px){
@@ -96,6 +98,6 @@ a{
         font-size:50px;
     }
     #gp {
-        font-size:35px;
+        font-size:32px;
     }
 }

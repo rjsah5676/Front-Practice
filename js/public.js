@@ -25,3 +25,8 @@ function isLogin(){
         location.href="./page/mainPage.html";
     }
 }
+
+function logout(){
+    sessionStorage.clear("myLogin");
+    location.href="../index.html";
+}

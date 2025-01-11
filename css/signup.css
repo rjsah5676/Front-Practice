@@ -12,17 +12,19 @@
 h1 {
     font-family: "Gothic A1", serif;
     font-style: normal;
-    color:white;
+    font-size:40px;
+    color:rgb(231, 226, 226);
 }
 
 .signup-box {
     white-space: nowrap;
     font-family: "Gothic A1", serif;
     font-style: normal;
-    background-color: rgb(39, 38, 38);
     border-radius: 20px;
     padding:20px;
     margin-bottom:40px;
+    background: linear-gradient(305deg, #1a1919,#777676);
+    box-shadow: 0px 0px 25px #a5a5a5;
 }
 .signup-box > ul {
     display: flex;
@@ -109,10 +111,14 @@ h1 {
     border-radius: 10px;
     width:200px;
     height:50px;
-    color:rgb(87, 87, 87);
-    background-color: rgb(218, 218, 218);
+    color:rgb(197, 197, 197);
+    background: transparent;
+
     font-size:25px;
     transition: all 0.6s;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.3),
+    4px 4px 5px 0px rgba(0,0,0,.3);
 }
 
 .signup-button:hover {
