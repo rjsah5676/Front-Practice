@@ -19,7 +19,7 @@ function getStyles() {
     if(hd!=null)
         hd.innerHTML = `
                 <li id="logo"><a href="./mainPage.html">GM LEE</a></li>
-                <li id="nav"><div><a href="./about.html">About</a></div><div><a href="./project.html">Project</a></div><div><a href="./guest.html">Guest</a></div><div><a href="./gallery.html">Gallery</a></div></li>
+                <li id="nav"><div><a href="./guest.html">Guest</a></div><div><a href="./gallery.html">Gallery</a></div><div><a href="./project.html">Project</a></div><div><a href="./about.html">About</a></div></li>
                 <li id="contact-logout"><div id="logout" onclick="logout()">Logout</div><div id="contact" onclick="openContact(1)">Contact</div></li>
             `;
 
