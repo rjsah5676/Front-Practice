@@ -30,3 +30,14 @@ function logout(){
     sessionStorage.clear("myLogin");
     location.href="../index.html";
 }
+
+function openContact(a){
+    let ct=document.getElementById("contact-container");
+    ct.style.opacity=a;
+    if(a==1) {
+        ct.style.zIndex=10;
+    }
+    if(a==0) {
+        ct.style.zIndex=-1;
+    }
+}

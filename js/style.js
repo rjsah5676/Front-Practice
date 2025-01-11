@@ -20,8 +20,31 @@ function getStyles() {
         hd.innerHTML = `
                 <li id="logo"><a href="./mainPage.html">GM LEE</a></li>
                 <li id="nav"><div><a href="./about.html">About</a></div><div><a href="./project.html">Project</a></div><div><a href="./guest.html">Guest</a></div><div><a href="./gallery.html">Gallery</a></div></li>
-                <li id="contact-logout"><div id="logout" onclick="logout()">Logout</div><div id="contact">Contact</div></li>
+                <li id="contact-logout"><div id="logout" onclick="logout()">Logout</div><div id="contact" onclick="openContact(1)">Contact</div></li>
             `;
+
+    let cc=document.getElementById("contact-container");
+    if(cc!=null) {
+        cc.innerHTML = `
+        <div id="contact-box">
+            <div id="contact-img-info">
+                <div id="contact-img"></div>
+            </div>
+            <ul>
+                <li class="contact-name">
+                    Gunmo Lee
+                </li>
+                <li class="contact-info" id="contact-tel">
+                    Tel.&nbsp;&nbsp; 010-6385-4676
+                </li>
+                <li class="contact-info" id="contact-email">
+                    Email.&nbsp;&nbsp; rjsah5676@gmail.com
+                </li>
+            </ul>
+            <button id="exit-button" onclick="openContact(0)">X</button>
+        </div>
+        `;
+    }
 
     const media = window.matchMedia("screen and (max-width: 1024px)");
     window.addEventListener('resize', function() {
