@@ -4,16 +4,18 @@ function getStyles() {
     bd.style.userSelect='none';
 
     let ft=document.getElementsByClassName("footer")[0];
-    ft.innerHTML = `Copyright 2024. 
-    <a href="https://github.com/rjsah5676/Front-Practice" 
-    style="text-decoration:none; color:#a2a2a2;">이건모.</a> All Right Reserved.`;
-    ft.style.width="100%";
-    ft.style.height="60px";
-    ft.style.lineHeight="60px";
-    ft.style.color="#a2a2a2";
-    ft.style.fontSize="20px";
-    ft.style.zIndex="-1";
-    ft.style.textAlign="center";
+    if(ft!=null) {
+        ft.innerHTML = `Copyright 2024. 
+        <a href="https://github.com/rjsah5676/Front-Practice" 
+        style="text-decoration:none; color:#a2a2a2;">이건모.</a> All Right Reserved.`;
+        ft.style.width="100%";
+        ft.style.height="60px";
+        ft.style.lineHeight="60px";
+        ft.style.color="#a2a2a2";
+        ft.style.fontSize="20px";
+        ft.style.zIndex="-1";
+        ft.style.textAlign="center";
+    }
 
     var user_name_db=getStore("myName");
 
@@ -48,9 +50,8 @@ function getStyles() {
         `;
     }
 
-    const media = window.matchMedia("screen and (max-width: 1024px)");
     window.addEventListener('resize', function() {
-        handleFooter(media);
+        handleFooter(window.innerWidth);
     });
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -62,7 +63,7 @@ function getStyles() {
 
 function handleFooter(a){
     let ft=document.getElementsByClassName("footer")[0];
-    if(a.matches) {
+    if(a<1024) {
         ft.style.fontSize = "15px";
     }
     else {

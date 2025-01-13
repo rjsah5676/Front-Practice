@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+ul {
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+
+.project-page-container {
+    font-family: "Noto Sans KR", serif;
+    font-weight: 400;
+    font-style: normal;
+    width:1000px;
+    margin: 0 auto;
+    margin-top:150px;
+    margin-bottom:150px;
+    color:white;
+}
+
+.project-index-button {
+    display:flex;
+    margin-bottom:70px;
+}
+
+.project-index-button > div {
+    margin-right: 20px;
+    width:100px;
+    height:30px;
+    line-height:30px;
+    font-size:20px;
+    text-align:center;
+    border: 2px solid white;
+    border-radius: 7px;
+    transition: all 0.6s;
+}
+
+.project-index-button > div:hover {
+    cursor: pointer;
+}
+
+#personal-button {
+    background-color: white;
+    color:#121212;
+    font-weight:600;
+}
+
+#personal-box{
+    transition: all 0.7s;
+}
+
+#team-box{
+    transition: all 0.7s;
+}
+
+.project-page-box {
+    width:100%;
+    margin-top:40px;
+}
+
+.content-box {
+    display:grid;
+    height:300px;
+    margin-left:20px;
+    margin-bottom:60px;
+    grid-template-columns: 0.5fr 1fr;
+}
+
+.left-img {
+    margin:auto;
+    width:300px;
+    height:100%;
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+}
+
+.left-img:hover {
+    cursor:pointer;
+    -webkit-transform: scale(1.07);
+	transform: scale(1.07);
+}
+
+.right-content {
+    margin-left:30px;
+    height:100%;
+}
+
+.content-tech {
+    display:flex;
+}
+
+.content-title {
+    font-size:28px;
+    font-weight:500;
+    margin-top:15px;
+}
+
+.content-text {
+    width:600px;
+    font-size:16px;
+    margin-left:10px;
+    margin-top:20px;
+}
+
+.content-tech {
+    margin-top:20px;
+}
+
+.tech-info {
+    background-color:#666666;
+    text-align:center;
+    width:80px;
+    height:23px;
+    line-height:23px;
+    color:white;
+    font-size:14px;
+
+    margin: 10px 10px 0px 10px;
+    border-radius: 20px;
+}
+
+.content-site {
+    margin-top:30px;
+    margin-left:10px;
+    display:flex;
+}
+
+#git-img {
+    transition: all 0.6s;
+    width:50px;
+    height:50px;
+    background: url(../../img/page/mainPage/github.png) no-repeat;
+}
+
+#git-img:hover {
+    background: url(../../img/page/mainPage/github_hover.png) no-repeat;
+}
+
+#page-out-img {
+    transition: all 0.6s;
+    width:50px;
+    height:50px;
+    background: url(../../img/page/project/page_out.png) no-repeat;
+}
+
+#page-out-img:hover {
+    background: url(../../img/page/project/page_out_hover.png) no-repeat;
+}
+.lists {
+    margin-right:20px;
+}
