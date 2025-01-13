@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+.top-title {
+    color: white;
+    font-size:40px;
+    margin-top:100px;
+    text-align: center;
+    margin-bottom:10px;
+    top:150px;
+}
+
+.slider-wrap {
+    font-family: "Dongle", serif;
+    width:700px;
+    margin: 0 auto;
+}
+
+.slider-contents {
+    height:600px;
+    margin:auto;
+    color:black;
+    background:url(../../img/page/diary/diary.png) no-repeat;
+    background-size:contain;
+    background-position: center;
+}
+.indicator {
+    margin-top:5px;
+    display: flex;
+    justify-content: center;
+    margin-bottom:50px;
+}
+.prevArrow {
+    background:rgba(133, 133, 133, 0.2);
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.3),
+    4px 4px 5px 0px rgba(0,0,0,.3);
+    text-align: center;
+    padding-right:3px;
+    line-height:58px;
+    color:white;
+    border-radius: 30px;
+    font-weight:700;
+    font-size:28px;
+    transition: all 0.4s;
+    width:50px;
+    height:50px;
+}
+.prevArrow:hover {
+    background:rgba(133, 133, 133, 0.5);
+    cursor:pointer;
+}
+.nextArrow {
+    background:rgba(133, 133, 133, 0.2);
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.3),
+    4px 4px 5px 0px rgba(0,0,0,.3);
+    text-align: center;
+    padding-left:3px;
+    line-height:58px;
+    color:white;
+    border-radius: 30px;
+    font-weight:700;
+    font-size:28px;
+    transition: all 0.4s;
+    width:50px;
+    height:50px;
+    margin-left:10px;
+}
+.nextArrow:hover {
+    background:rgba(133, 133, 133, 0.5);
+    cursor:pointer;
+}
+
+.diary-date {
+    margin:0;
+    padding:0;
+    line-height:38px;
+    margin-top:60px;
+    margin-left:100px;
+    font-size: 40px;
+}
+
+.diary-title {
+    margin:0;
+    padding:0;
+    line-height: 34px;
+    margin-left:100px;
+
+    font-size: 40px;
+    margin-bottom:5px;
+}
+
+pre {
+    margin:0;
+    padding:0;
+    margin-left:17%;
+    line-height: 38px;
+
+    font-family: "Dongle", serif;
+    font-size: 24px;
+}

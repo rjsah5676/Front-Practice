@@ -19,7 +19,7 @@ ul {
 
 .project-index-button {
     display:flex;
-    margin-bottom:70px;
+    margin-bottom:50px;
 }
 
 .project-index-button > div {
@@ -54,12 +54,12 @@ ul {
 
 .project-page-box {
     width:100%;
-    margin-top:40px;
 }
 
 .content-box {
     display:grid;
     height:300px;
+    margin-top:20px;
     margin-left:20px;
     margin-bottom:60px;
     grid-template-columns: 0.5fr 1fr;
@@ -244,4 +244,36 @@ slide
 
 #img-list-3 .banner_image:nth-child(1) {
     opacity:1;
+}
+#pl-viewer{
+    width:100%;
+    overflow: hidden;
+}
+#pl-list {
+    margin-left:20px;
+    display:flex;
+}
+#img-exit {
+    height:50px;
+    width:50px;
+    margin-left:730px;
+    margin-top:20px;
+    background:none;
+    color:white;
+    border-radius: 30px;
+    font-weight:700;
+    font-size:28px;
+    transition: all 0.4s;
+}
+#img-exit:hover {
+    cursor: pointer;
+    background:rgb(0,0,0,0.5);
+}
+#img-alert {
+    color:white;
+    position:absolute;
+    font-size:18px;
+    left:50%;
+    top:50px;
+    transform: translateX(-50%);
 }
