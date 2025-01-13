@@ -118,7 +118,7 @@ ul {
 #contact-container{
     z-index:-1;
     opacity: 0;
-    position:absolute;
+    position:fixed;
     width:600px;
     height:400px;
     left:50%;

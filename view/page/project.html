@@ -19,10 +19,97 @@
             margin-left:20px;
             display:flex;
         }
+        #img-exit {
+            height:50px;
+            width:50px;
+            margin-left:730px;
+            margin-top:20px;
+            background:none;
+            color:white;
+            border-radius: 30px;
+            font-weight:700;
+            font-size:28px;
+            transition: all 0.4s;
+        }
+        #img-exit:hover {
+            cursor: pointer;
+            background:rgb(0,0,0,0.5);
+        }
+        #img-alert {
+            color:white;
+            position:absolute;
+            font-size:18px;
+            left:50%;
+            top:50px;
+            transform: translateX(-50%);
+        }
     </style>
 </head>
 <body class="fade">
     <div id="contact-container"></div>
+    <div class="img-list" id="img-list-1">
+        <div class='info-contents-img'>
+            <div id="img-alert">◁ ▷ 이미지를 좌/우로 슬라이드 가능합니다.</div>
+            <button id="img-exit" onclick="openImg(0,1)">X</button>
+            <div class='banner_wrap'>
+              <div class='slide_banner'>
+                <img class='banner_image' src="../../img/page/project/yorijori/img_main.png"/>
+                <img class='banner_image' src="../../img/page/project/yorijori/img_slide_5.png"/>
+                <img class='banner_image' src="../../img/page/project/yorijori/img_write.png"/>
+                <img class='banner_image' src="../../img/page/project/yorijori/img_slide_4.png"/>
+                <div class='pre_arrow'>
+                  <img onclick="leftImage(1,4)" src="../../img/page/project/left_arrow.png" alt=""/>
+                </div>
+                <div class='next_arrow'>
+                  <img onclick="rightImage(1,4)" src="../../img/page/project/right_arrow.png" alt=""/>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="img-list" id="img-list-2">
+        <div class='info-contents-img'>
+            <div id="img-alert">◁ ▷ 이미지를 좌/우로 슬라이드 가능합니다.</div>
+            <button id="img-exit" onclick="openImg(0,2)">X</button>
+            <div class='banner_wrap'>
+              <div class='slide_banner'>
+                <img class='banner_image' src="../../img/page/project/yorijori/img_main.png"/>
+                <img class='banner_image' src="../../img/page/project/yorijori/img_slide_5.png"/>
+                <img class='banner_image' src="../../img/page/project/yorijori/img_write.png"/>
+                <img class='banner_image' src="../../img/page/project/yorijori/img_slide_4.png"/>
+                <div class='pre_arrow'>
+                  <img onclick="leftImage(2,4)" src="../../img/page/project/left_arrow.png" alt=""/>
+                </div>
+                <div class='next_arrow'>
+                  <img onclick="rightImage(2,4)" src="../../img/page/project/right_arrow.png" alt=""/>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="img-list" id="img-list-3">
+        <div class='info-contents-img'>
+            <div id="img-alert">◁ ▷ 이미지를 좌/우로 슬라이드 가능합니다.</div>
+            <button id="img-exit" onclick="openImg(0,3)">X</button>
+            <div class='banner_wrap'>
+              <div class='slide_banner'>
+                <img class='banner_image' src="../../img/page/project/airboard/img_1.png"/>
+                <img class='banner_image' src="../../img/page/project/airboard/img_3.png"/>
+                <img class='banner_image' src="../../img/page/project/airboard/img_4.png"/>
+                <img class='banner_image' src="../../img/page/project/airboard/img_6.png"/>
+                <div class='pre_arrow'>
+                  <img onclick="leftImage(3,4)" src="../../img/page/project/left_arrow.png" alt=""/>
+                </div>
+                <div class='next_arrow'>
+                  <img onclick="rightImage(3,4)" src="../../img/page/project/right_arrow.png" alt=""/>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
     <ul class="header"></ul>
     <div class="project-page-container">
         <div class="project-index-button">
@@ -35,10 +122,10 @@
             <ul>
                 <li>
                     <div class="content-box">
-                        <div class="left-img" style="background:url(../../img/page/project/YoriJori.png) no-repeat;"></div>
+                        <div class="left-img" onclick="openImg(1,1)" style="background:url(../../img/page/project/YoriJori.png) no-repeat;"></div>
                         <div class="right-content">
                             <ul>
-                                <li class="content-title">
+                                <li class="content-title" onclick="openImg(1,1)">
                                     음식 레시피 공유 사이트 [요리조리]
                                 </li>
                                 <li class="content-text">
@@ -62,10 +149,10 @@
                 </li>
                 <li>
                     <div class="content-box">
-                        <div class="left-img" style="background:url(../../img/page/project/logo.png) no-repeat;"></div>
+                        <div class="left-img" onclick="openImg(1,2)" style="background:url(../../img/page/project/logo.png) no-repeat;"></div>
                         <div class="right-content">
                             <ul>
-                                <li class="content-title">
+                                <li class="content-title" onclick="openImg(1,2)">
                                     개인 포트폴리오 [Gunmo's Dev Life]
                                 </li>
                                 <li class="content-text">
@@ -95,10 +182,10 @@
             <ul>
                 <li>
                     <div class="content-box">
-                        <div class="left-img" style="background:url(../../img/page/project/AirBoard.png) no-repeat;"></div>
+                        <div class="left-img" onclick="openImg(1,3)" style="background:url(../../img/page/project/AirBoard.png) no-repeat;"></div>
                         <div class="right-content">
                             <ul>
-                                <li class="content-title">
+                                <li class="content-title" onclick="openImg(1,3)">
                                     캠 필기 웹 화상 회의 서비스 [AirBoard]
                                 </li>
                                 <li class="content-text">
