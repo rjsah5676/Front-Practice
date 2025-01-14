@@ -125,7 +125,9 @@ ul {
     top:50%;
     transform: translate(-50%,-50%);
     border-radius:20px;
-    background-color: rgba(46, 47, 48, 0.8);
+    background-color: rgba(46, 47, 48, 0.6);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
     transition: all 0.5s;
 }
 

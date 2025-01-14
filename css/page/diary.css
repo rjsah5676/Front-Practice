@@ -12,6 +12,7 @@
     font-family: "Dongle", serif;
     width:700px;
     margin: 0 auto;
+    margin-bottom:100px;
 }
 
 .slider-contents {
@@ -27,7 +28,6 @@
 
     position: absolute;
     justify-content: center;
-    margin-bottom:50px;
 }
 .prevArrow {
     background:rgba(133, 133, 133, 0.2);
