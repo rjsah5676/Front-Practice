@@ -2,13 +2,21 @@
     background-color: #222222;
     width:80%;
     margin: 0 auto;
-    margin-top:100px;
     padding: 15px;
     border-radius: 15px;
     height: 100%;
     margin-bottom:100px;
 }
-
+.top-title {
+    color: white;
+    font-size:40px;
+    font-weight: 600;
+    margin-top:80px;
+    margin-left:9%;
+    margin-bottom:20px;
+    margin-top:150px;
+    padding:0px;
+}
 .gallery-box {
     display:grid;
     grid-template-columns: repeat(4, 1fr);

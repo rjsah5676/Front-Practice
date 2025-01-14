@@ -4,7 +4,7 @@ var page=0;
 function loadImage()
 {
     page=0;
-    for(var i=1;i<=17;i++ ){
+    for(var i=1;i<=24;i++ ){
         imgs.push("../../img/page/gallery/gallery_"+i+".png");
     }
     renderImage();

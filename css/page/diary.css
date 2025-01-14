@@ -2,11 +2,10 @@
 
 .top-title {
     color: white;
-    font-size:40px;
+    font-size:80px;
     margin-top:100px;
-    text-align: center;
-    margin-bottom:10px;
     top:150px;
+    padding:0px;
 }
 
 .slider-wrap {
@@ -25,7 +24,8 @@
 }
 .indicator {
     margin-top:5px;
-    display: flex;
+
+    position: absolute;
     justify-content: center;
     margin-bottom:50px;
 }
@@ -35,15 +35,20 @@
     7px 7px 20px 0px rgba(0,0,0,.3),
     4px 4px 5px 0px rgba(0,0,0,.3);
     text-align: center;
-    padding-right:3px;
+    padding-right:1px;
     line-height:58px;
     color:white;
     border-radius: 30px;
     font-weight:700;
-    font-size:28px;
+    font-size:30px;
     transition: all 0.4s;
-    width:50px;
+    width:30px;
     height:50px;
+    position: absolute;
+    right:0px;
+    bottom:150px;
+    padding-top:150px;
+    padding-bottom:150px;
 }
 .prevArrow:hover {
     background:rgba(133, 133, 133, 0.5);
@@ -60,11 +65,15 @@
     color:white;
     border-radius: 30px;
     font-weight:700;
-    font-size:28px;
+    font-size:30px;
     transition: all 0.4s;
-    width:50px;
+    width:30px;
     height:50px;
-    margin-left:10px;
+    position: absolute;
+    left:700px;
+    bottom:150px;
+    padding-top:150px;
+    padding-bottom:150px;
 }
 .nextArrow:hover {
     background:rgba(133, 133, 133, 0.5);
