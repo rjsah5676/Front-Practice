@@ -80,3 +80,32 @@ function openContact(a){
         ct.style.zIndex=-1;
     }
 }
+
+function settingMenu() {
+    menu = new Menu("#myMenu");
+    var item1 = new Item("list", "fas fa-bars", "");
+    var item2 = new Item("home", "fas fa-sign-out-alt", "", "");
+    var item3 = new Item("up", "fas fa-id-card", "", "");
+    var item4 = new Item("canvass", "fas fa-exchange-alt", "", "");
+
+    menu.add(item1);
+    menu.add(item2);
+    menu.add(item3);
+    menu.add(item4);
+
+    let homeButton=document.getElementById("home");
+    var upButton=document.getElementById("up");
+    var canvasButton=document.getElementById("canvass");
+
+    homeButton.addEventListener('click', () => {
+        window.location.href = './mainPage.html';
+    });
+
+    upButton.addEventListener('click', () => {
+        window.scrollTo({top:0,left:0,behavior:'smooth'});
+    });
+
+    canvasButton.addEventListener('click', () => {
+        window.location.href = './canvas.html';
+    });
+}
