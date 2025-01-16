@@ -31,7 +31,15 @@ function resetOpacity(a) {
 }
 
 function birthChk(a,b,c) {
-    x=[31,30,31,30,31,30,31,31,30,31,30,31];
+    var two=29;
+    if(b==2) {
+        if(a%400==0) two=29;
+        else if(a%100==0) two=28;
+        else if(a%4==0) two=29;
+        else two=28;
+    }
+
+    x=[31,two,31,30,31,30,31,31,30,31,30,31];
     if(isNaN(a)||isNaN(b)||isNaN(c)) return true;
     if(a<1900 || a>2024) return true;
     if(b>12 || b<1) return true;

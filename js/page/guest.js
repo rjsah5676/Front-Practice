@@ -49,7 +49,9 @@ function submitText()
         var testList = JSON.parse(ugd);
         testList.push(params);
         localStorage.setItem("user_guest_db",JSON.stringify(testList));
-        location.href="./guest.html";
+        drawList();
+        window.scrollTo({top:0,left:0,behavior:'smooth'});
+        document.getElementsByClassName('guest-body')[0].scrollTo({top:0,left:0,behavior:'smooth'});
     }
 }
 
