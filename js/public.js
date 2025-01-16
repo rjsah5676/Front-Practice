@@ -86,16 +86,40 @@ function settingMenu() {
     var item1 = new Item("list", "fas fa-bars", "");
     var item2 = new Item("home", "fas fa-sign-out-alt", "", "");
     var item3 = new Item("up", "fas fa-id-card", "", "");
-    var item4 = new Item("canvass", "fas fa-exchange-alt", "", "");
+    var item4 = new Item("my-info", "fas fa-exchange-alt", "",
+        `<ul id='myinfo'>
+        <li>ㅎㅇㅇ</li>
+        <li>ㅎㅇㅇㅇ</li>
+        <li>ㅎㅇㅇㅇㅇ</li>
+        </ul>`);
+    var item5 = new Item("info-contents", "fas fa-exchange-alt", "","");
 
     menu.add(item1);
     menu.add(item2);
     menu.add(item3);
     menu.add(item4);
+    menu.add(item5);
+
+    let menuList=document.getElementById("list");
 
     let homeButton=document.getElementById("home");
     var upButton=document.getElementById("up");
-    var canvasButton=document.getElementById("canvass");
+    var myInfoButton=document.getElementById("my-info");
+    var contents=document.getElementById("info-contents");
+
+    contents.innerHTML=
+    `
+    <div id='contents-line'></div>
+    <ul>
+        <li><div id='dot'>●</div><div id='contents-date'>1997.12 ~ </div><div id='contents-text'>출생</div></li>
+        <li><div id='dot'>●</div><div id='contents-date'>2013.03 ~ 2016.02</div><div id='contents-text'>풍생고등학교 입학</div></li>
+        <li><div id='dot'>●</div><div id='contents-date'>2016.03 ~ 2022.02</div><div id='contents-text'>아주대학교 소프트웨어학과 입학</div></li>
+        <li><div id='dot'>●</div><div id='contents-date'>2017.03 ~ 2018.12</div><div id='contents-text'>육군 5사단 근무</div></li>
+        <li><div id='dot'>●</div><div id='contents-date'>2021.06 ~ 2021.08</div><div id='contents-text'>(주) 트루피플 인턴 실습</div></li>
+        <li><div id='dot'>●</div><div id='contents-date'>2024.11 ~</div><div id='contents-text'>한국ICT인재개발원 교육</div></li>
+    </ul>
+    `
+    ;
 
     homeButton.addEventListener('click', () => {
         window.location.href = './mainPage.html';
@@ -104,8 +128,47 @@ function settingMenu() {
     upButton.addEventListener('click', () => {
         window.scrollTo({top:0,left:0,behavior:'smooth'});
     });
+    var clicked=false;
 
-    canvasButton.addEventListener('click', () => {
-        window.location.href = './canvas.html';
+    menuList.addEventListener('mousedown', () => {
+        if(clicked) {
+            contents.style.opacity=0;
+            clicked = !clicked;
+        }
     });
+
+    myInfoButton.addEventListener('click', () => {
+        if(!clicked) {
+            contents.style.left=getNumberFromPixel(myInfoButton.style.left)-470+'px';
+            contents.style.top=getNumberFromPixel(myInfoButton.style.top)-220+'px';
+            contents.style.opacity=1;
+        }
+        else {
+            contents.style.opacity=0;
+        }
+        clicked = !clicked;
+    });
+}
+
+function getNumberFromPixel(_px) {
+    if (_px == null || _px == "") {
+        return 0;
+    }
+   
+    _px = _px + "";
+   
+    if (_px.indexOf("px") > -1) {
+        _px = _px.replace("px", "");
+    }
+   
+    if (_px.indexOf("PX") > -1) {
+        _px = _px.replace("PX", "");
+    }
+   
+    var result = parseInt(_px, 10);
+    if ((result + "") == "NaN") {
+        return 0;
+    }
+   
+    return result;
 }

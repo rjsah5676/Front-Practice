@@ -1,5 +1,8 @@
 .gallery-container {
-    background-color: #222222;
+    background:rgba(59, 59, 59, 0.2);
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.6),
+    4px 4px 5px 0px rgba(0,0,0,.6);
     width:80%;
     margin: 0 auto;
     padding: 15px;
@@ -24,6 +27,9 @@
 }
 .gallery-item {
     background-color:#999999;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.6),
+    4px 4px 5px 0px rgba(0,0,0,.6);
     margin-top:5%;
     margin-left:10%;
     margin-bottom:5%;
@@ -39,6 +45,9 @@
     opacity:0;
     z-index:-1;
     background-color:rgba(0, 0, 0, 0.7);
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.6),
+    4px 4px 5px 0px rgba(0,0,0,.6);
     position:fixed;
     width:800px;
     height:700px;
@@ -58,6 +67,9 @@
     border-radius:10px;
     position:absolute;
     background-repeat: no-repeat;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.6),
+    4px 4px 5px 0px rgba(0,0,0,.6);
 }
 
 .exit-button {

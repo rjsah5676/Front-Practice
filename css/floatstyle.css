@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
 .center {
   z-index:100;
@@ -37,6 +37,7 @@ i {
   color: #222222;
 }
 
+/*
 .item span {
   position: absolute;
   top: 60%;
@@ -57,47 +58,7 @@ i {
   opacity: 0;
   transition: all 0.2s ease-in-out;
 }
-
-.item:hover span {
-  top: 100%;
-  opacity: 0.9;
-}
-
-#exit span{
-  left:-25px;
-}
-
-#setting span{
-  left:-2px;
-}
-
-#rename span{
-  left:-18px;
-}
-
-#everyuser span{
-  left:-65px;
-}
-
-#onlyhost span{
-  left:-55px;
-}
-
-#eachcanvas span{
-  left:-40px;
-}
-
-#userlist span{
-  left:-43px;
-}
-
-#reverse span{
-  left:-43px;
-}
-
-#screenshot span{
-  left:-16px;
-}
+*/
 
 #list {
     background-image:url(../img/float/list.png);
@@ -123,10 +84,70 @@ i {
     4px 4px 5px 0px rgba(0,0,0,.3);
 }
 
-#canvass {
+#my-info {
     background-image:url(../img/float/canvas.png);
     background-position: center;
     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
     7px 7px 20px 0px rgba(0,0,0,.3),
     4px 4px 5px 0px rgba(0,0,0,.3);
+}
+
+
+.item span{
+  display:none;
+}
+
+#info-contents{
+  opacity:0;
+  background:rgba(68, 68, 68, 0.9);
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+  7px 7px 20px 0px rgba(0,0,0,.3),
+  4px 4px 5px 0px rgba(0,0,0,.3);
+  transition: all 0.3s;
+  width:450px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+#info-contents >ul {
+  margin:0;
+  padding:0;
+
+  padding-top:0px;
+}
+
+#info-contents ul > li {
+  font-family: "Noto Sans KR", serif;
+  font-size:15px;
+  line-height: 28px;
+  padding:0;
+  margin:0;
+  text-align: left;
+  color:white;
+  display: flex;
+}
+
+#info-contents:hover {
+  cursor: default;
+}
+
+#contents-date{
+  margin-left:10px;
+  width:45%;
+}
+
+#contents-text {
+  width:55%;
+}
+
+#dot {
+  line-height: 28px;
+  font-size:20px;
+}
+
+#contents-line {
+  position:absolute;
+  border-left:3px solid white;
+  left:14px;
+  height: 170px;
 }
